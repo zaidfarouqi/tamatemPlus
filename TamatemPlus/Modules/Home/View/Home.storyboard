@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="Y6W-OH-hqX" customClass="HomeViewController" customModule="TamatemPlus" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="uUs-nz-9oj">
+                                <rect key="frame" x="64" y="205" width="247" height="129"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="129" id="kyb-av-erp"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5kw-zN-nxe">
+                                <rect key="frame" x="32" y="382" width="311" height="48"/>
+                                <color key="backgroundColor" name="ButtonBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="Yj7-qK-3qz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Open Browser">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornersRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="openBrowser:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="DWC-0T-raX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="mainColor"/>
+                        <constraints>
+                            <constraint firstItem="5kw-zN-nxe" firstAttribute="top" secondItem="uUs-nz-9oj" secondAttribute="bottom" constant="48" id="9bR-cU-egU"/>
+                            <constraint firstItem="uUs-nz-9oj" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="64" id="HeU-LG-Uck"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="uUs-nz-9oj" secondAttribute="trailing" constant="64" id="Uvd-ua-gpM"/>
+                            <constraint firstItem="5kw-zN-nxe" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="VdB-cD-pRK"/>
+                            <constraint firstItem="5kw-zN-nxe" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="32" id="cbC-48-sic"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="5kw-zN-nxe" secondAttribute="trailing" constant="32" id="k3O-36-tUM"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="48" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="620" height="579"/>
+        <namedColor name="ButtonBackgroundColor">
+            <color red="0.24313725490196078" green="0.54509803921568623" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="mainColor">
+            <color red="0.019999999552965164" green="0.0" blue="0.22400000691413879" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
